@@ -1,7 +1,24 @@
 @charset "UTF-8";
+
 // reset browser default styles
-@import "reset";
+@import 'reset';
+
 // fonts
-@import "fonts";
+@import 'fonts';
+
 // variables
-@import "variables";
+@import 'variables';
+
+// utilities
+@import 'mixins';
+@import 'extends';
+
+// global styling
+@import 'base';
+
+// global plugin style goes here
+
+// global component style goes here
+
+// override
+@import 'override';
