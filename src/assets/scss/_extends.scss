@@ -1,3 +1,11 @@
+%noSelect {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
 %responsiveImage {
   display: inline-block;
   width: 100%;

@@ -1,3 +1,95 @@
+/* --- headings starts --- */
+@mixin h1($fontSize: 6rem, $color: $tangaroa) {
+  font-family: $fontMerriweather;
+  font-size: $fontSize;
+  line-height: 1.2;
+  font-weight: bold;
+  color: $color;
+}
+
+@mixin h2($fontSize: 4.2rem, $color: $tangaroa) {
+  font-family: $fontMerriweather;
+  font-size: $fontSize;
+  line-height: 1.2;
+  font-weight: bold;
+  color: $color;
+}
+
+@mixin h3($fontSize: 2.6rem, $color: $tangaroa) {
+  font-family: $fontMerriweather;
+  font-size: $fontSize;
+  line-height: 1.2;
+  font-weight: bold;
+  color: $color;
+}
+
+@mixin h4($fontSize: 2.2rem, $color: $tangaroa) {
+  font-family: $fontMerriweather;
+  font-size: $fontSize;
+  line-height: 1.2;
+  font-weight: bold;
+  color: $color;
+}
+
+@mixin h5($fontSize: 1.8rem, $color: $tangaroa) {
+  font-family: $fontMerriweather;
+  font-size: $fontSize;
+  line-height: 1.2;
+  font-weight: bold;
+  color: $color;
+}
+
+@mixin h6($fontSize: 1.6rem, $color: $tangaroa) {
+  font-family: $fontMerriweather;
+  font-size: $fontSize;
+  line-height: 1.2;
+  font-weight: bold;
+  color: $color;
+}
+
+@mixin link($color: $tangaroa, $decoration: none) {
+  font-size: inherit;
+  line-height: inherit;
+  color: $color;
+  text-decoration: $decoration;
+
+  &:hover,
+  &:focus {
+    color: $color;
+    @if $decoration == 'none' {
+      text-decoration: underline;
+    } @else {
+      text-decoration: none;
+    }
+  }
+}
+
+@mixin btn($fontSize: 1.6rem, $color: $bone, $bg: $tangaroa) {
+  position: relative;
+  padding: 1rem;
+  font-size: $fontSize;
+  line-height: 1;
+  color: $color;
+  border-radius: 1rem;
+  border: 0.1rem solid transparent;
+  background: $bg;
+  appearance: none;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    color: $bg;
+    background: $color;
+  }
+}
+
+@mixin footnotes($fontSize: 1.4rem, $color: $tangaroa) {
+}
+
 /**
   When using ::before and ::after you'll always need these three, so we're saving two lines of code every time you use this.
 */

@@ -1,4 +1,5 @@
 /* --- font family starts --- */
+$fontMerriweather: 'Merriweather';
 $fontLeagueSpartan: 'League Spartan';
 /* --- font family ends --- */
 
@@ -27,6 +28,12 @@ $winterGreenDream: #558981;
 $steelTeal: #5e8f87;
 $desaturatedCyan: #67958e;
 /* --- colors ends --- */
+
+/* --- global variables starts --- */
+$button: (
+  'button, .button, [type=submit], [type=reset], [type=button]'
+) !default;
+/* --- global variables ends --- */
 
 /* --- media queries starts --- */
 $tabletLandscape: 'all and (min-width: 1024px)';
