@@ -1,5 +1,5 @@
 <template>
-  <section class="greetings">
+  <section class="section greetings">
     <h1>Welcome Greetings</h1>
   </section>
 </template>
