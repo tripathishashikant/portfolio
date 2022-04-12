@@ -1,23 +1,15 @@
 <template>
   <section class="page">
-    <section class="page__header">
-      <the-header></the-header>
-    </section>
-    <main class="page__mainContent">
-      <section class="page__banner">
-        <the-banner></the-banner>
-      </section>
-      <section class="page__modules">
-        <the-greetings></the-greetings>
-      </section>
-    </main>
-    <section class="page__footer">
-      <the-footer></the-footer>
-    </section>
+    <the-header></the-header>
+    <the-banner></the-banner>
+    <the-greetings></the-greetings>
+    <the-footer></the-footer>
   </section>
 </template>
 
 <script>
+// import { gsap } from 'gsap';
+
 import TheHeader from '../common/components/TheHeader.vue';
 import TheFooter from '../common/components/TheFooter.vue';
 import TheBanner from '../modules/components/TheBanner.vue';
