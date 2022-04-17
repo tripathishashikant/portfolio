@@ -1,6 +1,8 @@
 <template>
-  <section class="section banner">
-    <h1>Banner</h1>
+  <section class="section section--blue">
+    <section class="banner">
+      <h1>Banner</h1>
+    </section>
   </section>
 </template>
 

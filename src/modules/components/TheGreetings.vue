@@ -1,6 +1,8 @@
 <template>
-  <section class="section greetings">
-    <h1>Welcome Greetings</h1>
+  <section class="section section--purple">
+    <section class="greetings">
+      <h1>Welcome Greetings</h1>
+    </section>
   </section>
 </template>
 
@@ -9,3 +11,5 @@ export default {
   name: 'greetings',
 };
 </script>
+
+<style lang="scss" scoped></style>
