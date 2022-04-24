@@ -1,5 +1,5 @@
 <template>
-  <section class="section section--yellow">
+  <section class="section__item section__item--yellow">
     <section class="portfolio">
       <h1>Portfolio</h1>
     </section>

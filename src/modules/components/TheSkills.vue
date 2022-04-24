@@ -1,5 +1,5 @@
 <template>
-  <section class="section section--maroon">
+  <section class="section__item section__item--maroon">
     <section class="skills">
       <h1>Skills</h1>
     </section>
