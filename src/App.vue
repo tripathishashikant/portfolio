@@ -90,18 +90,22 @@ export default {
     /* ---------- ends: resize sections ---------- */
 
     /* ---------- starts: nav dots animation ---------- */
-    dotAnim.to('.app__dot', {
-      stagger: { each: 1, yoyo: true, repeat: 1 },
-      scale: 2.1,
-      rotation: 0.1,
-      ease: 'none',
-      duration: 0.5,
-    });
-    dotAnim.time(1);
+    setTimeout(() => {
+      dotAnim.to('.app__dot', {
+        stagger: { each: 1, yoyo: true, repeat: 1 },
+        scale: 2.1,
+        rotation: 0.1,
+        ease: 'none',
+        duration: 0.5,
+      });
+      dotAnim.time(1);
+    }, 0);
     /* ---------- end: nav dots animation ---------- */
 
     /* ---------- starts: tween dots animation ---------- */
-    function tweenDot() {
+    function tweenDot(activeSection) {
+      console.log(activeSection);
+      dots.classList.add('active');
       gsap.set(dotAnim, {
         time: Math.abs(gsap.getProperty(container, 'y') / ih) + 1,
       });
@@ -136,7 +140,7 @@ export default {
       gsap.to(container, {
         y: offsets[activeSlide],
         ease: 'power2.inOut',
-        onUpdate: tweenDot,
+        onUpdate: tweenDot(activeSlide),
         duration: dur,
       });
     }
@@ -147,6 +151,7 @@ export default {
       const tl = gsap.timeline({ paused: true, reversed: true });
       const newDot = document.createElement('section');
       newDot.className = 'app__dot';
+      newDot.setAttribute('data-index', i);
       newDot.index = i;
       navDots.push(newDot);
       newDot.addEventListener('click', slideAnim);
