@@ -1,18 +1,14 @@
 <template>
-  <h1>Portfolio project</h1>
+<div class="app">
+  <header class="app__header header">
+    <TheNavigation></TheNavigation>
+  </header>
+  <main id="mainContent" class="app__views">
+    <router-view></router-view>
+  </main>
+</div>
 </template>
 
-<style lang="scss" scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<script setup>
+import TheNavigation from './components/common/TheNavigation.vue';
+</script>
