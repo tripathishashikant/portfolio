@@ -12,3 +12,7 @@
 <script setup>
 import TheNavigation from './components/common/TheNavigation.vue';
 </script>
+
+<style lang="scss">
+@import './assets/scss/style.scss';
+</style>
