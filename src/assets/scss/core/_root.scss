@@ -49,9 +49,11 @@
   @if $font-size-root != null {
     --#{$prefix}root-font-size: #{$font-size-root};
   }
+
   --#{$prefix}body-font-family: #{inspect($font-family-base)};
   --#{$prefix}body-font-weight: #{$font-weight-base};
   --#{$prefix}body-line-height: #{$line-height-base};
+
   @if $body-text-align != null {
     --#{$prefix}body-text-align: #{$body-text-align};
   }
