@@ -1,8 +1,5 @@
 <template>
 <div class="app">
-  <header class="app__header header">
-    <TheNavigation></TheNavigation>
-  </header>
   <main id="mainContent" class="app__views">
     <router-view></router-view>
   </main>
@@ -11,7 +8,6 @@
 
 <script setup>
 import { onMounted, onBeforeUnmount } from 'vue';
-import TheNavigation from '@/components/common/TheNavigation.vue';
 import { useThemeSwitcherStore } from '@store/themeSwitcher';
 import THEME_SWITCHER from "@/constants/themeSwitcher";
 

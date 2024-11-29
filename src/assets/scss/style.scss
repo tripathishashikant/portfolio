@@ -1,15 +1,15 @@
-// 1). Include function here
+// 1). Include any default variable override here
+
+// 2). Configuration
 @import './core/functions';
-
-// 2). Include any default variable override here
-
-// 3). Include variable here, which is a required part
 @import './core/variables';
 @import './core/variables-dark';
-
-// 4). Include other required part here, like mixin and root
 @import './core/maps';
 @import './core/mixins';
+
+// 3). Layout & components
 @import './core/root';
 
-// 5). Include optional part as and when required 
+// 4). Helpers
+
+// 5). Utilities

@@ -1,0 +1,7 @@
+@function to-rgb($color) {
+  @if type-of($color) == 'color' {
+    @return rgb(red($color), green($color), blue($color));
+  } @else {
+    @error "Invalid color argument. Please provide a valid color."
+  }
+}

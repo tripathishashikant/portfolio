@@ -1,14 +1,9 @@
 <template>
-  <IntroSection></IntroSection>
-  <TheProjects></TheProjects>
-  <EducationAndExperience></EducationAndExperience>
-  <TheSkills></TheSkills>
+  <intro-section></intro-section>
+  <experience></experience>
 </template>
 
 <script setup>
 import IntroSection from '../components/IntroSection.vue';
-import TheProjects from '../components/TheProjects.vue';
-import EducationAndExperience from '../components/ExperienceAndEducation.vue';
-import TheSkills from '../components/TheSkills.vue';
-
+import Experience from '../components/Experience.vue';
 </script>
