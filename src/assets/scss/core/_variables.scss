@@ -11,7 +11,7 @@ $cyan: #0dcaf0 !default;
 $primary: $black !default;
 $success: $green !default;
 $info: $cyan !default;
-$warning: $yellow !default;
+$warning: $orange !default;
 $danger: $red !default;
 
 $theme-colors: (
@@ -19,9 +19,7 @@ $theme-colors: (
   "success": $success,
   "info": $info,
   "warning": $warning,
-  "danger": $danger,
-  "light": $light,
-  "dark": $dark) !default;
+  "danger": $danger) !default;
 
 $colors: (
   "blue": $blue,
@@ -35,146 +33,52 @@ $colors: (
 
 // Spacing
 $spacer: 1rem !default;
-$spacers: (
-  0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
-  ) !default;
-
-$headings-margin-bottom: $spacer * .5 !default;
-$headings-font-family: null !default;
-$headings-font-style: null !default;
-$headings-font-weight: 500 !default;
-$headings-line-height: 1.2 !default;
-$headings-color: inherit !default;
 
 // Body
-$body-text-align: null !default;
 $body-color: $black !default;
 $body-bg: $white !default;
 
-$body-secondary-color: rgba($body-color, .75) !default;
-$body-secondary-bg: rgba($body-bg, .75) !default;
+// Paragraphs
+$paragraph-margin-bottom: 1rem !default;
+
+// Heading
+$headings-margin-bottom: $spacer * .5 !default;
+$headings-color: inherit !default;
 
 // Links
 $link-color: $blue !default;
 $link-decoration: null !default;
-$link-shade-percentage: 20% !default;
 $link-hover-color: $primary !default;
 $link-hover-decoration: underline !default;
-
-// Paragraphs
-$paragraph-margin-bottom: 1rem !default;
 
 // Border
 $border-width: 1px !default;
 $border-style: solid !default;
 $border-color: $black !default;
-$border-color-translucent: rgba($white, .175) !default;
 
-// Outline
-$focus-ring-width: .25rem !default;
-$focus-ring-opacity: .25 !default;
-$focus-ring-color: rgba($primary, $focus-ring-opacity) !default;
-
-// Font family
-$font-family-sans-serif: system-ui,
-  -apple-system,
-  "Segoe UI",
-  Roboto,
-  "Helvetica Neue",
-  "Noto Sans",
-  "Liberation Sans",
-  Arial,
-  sans-serif,
-  "Apple Color Emoji",
-  "Segoe UI Emoji",
-  "Segoe UI Symbol",
-  "Noto Color Emoji" !default;
-$font-family-monospace: SFMono-Regular,
-  Menlo,
-  Monaco,
-  Consolas,
-  "Liberation Mono",
-  "Courier New",
-  monospace !default;
-
+// Font
+$font-family-sans-serif: "Helvetica Neue", "Arial", "sans-serif" !default;
+$font-family-monospace: "Courier New", "monospace" !default;
 $font-family-base: var(--font-sans-serif) !default;
 $font-family-code: var(--font-monospace) !default;
-
-// Font sizes
-$font-size-root: null !default;
-$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
-$font-size-sm: $font-size-base * .875 !default;
-$font-size-lg: $font-size-base * 1.25 !default;
+$font-size-root: 62.5% !default;
+$font-size-base: 1rem !default;
 $small-font-size: .875em !default;
-$sub-sup-font-size:           .75em !default;
+$sub-sup-font-size: .75em !default;
+$font-weight-base: normal !default;
 
-$font-weight-lighter: lighter !default;
-$font-weight-light: 300 !default;
-$font-weight-normal: 400 !default;
-$font-weight-medium: 500 !default;
-$font-weight-semibold: 600 !default;
-$font-weight-bold: 700 !default;
-$font-weight-bolder: bolder !default;
-
-$font-weight-base: $font-weight-normal !default;
-
+// Line Height
 $line-height-base: 1.5 !default;
 $line-height-sm: 1.25 !default;
 $line-height-lg: 2 !default;
 
+// Headings
 $h1-font-size: $font-size-base * 2.5 !default;
 $h2-font-size: $font-size-base * 2 !default;
 $h3-font-size: $font-size-base * 1.75 !default;
 $h4-font-size: $font-size-base * 1.5 !default;
 $h5-font-size: $font-size-base * 1.25 !default;
 $h6-font-size: $font-size-base !default;
-
-// Z-index master list
-$zindex-dropdown: 1000 !default;
-$zindex-sticky: 1020 !default;
-$zindex-fixed: 1030 !default;
-$zindex-offcanvas-backdrop: 1040 !default;
-$zindex-offcanvas: 1045 !default;
-$zindex-modal-backdrop: 1050 !default;
-$zindex-modal: 1055 !default;
-$zindex-popover: 1070 !default;
-$zindex-tooltip: 1080 !default;
-$zindex-toast: 1090 !default;
-
-// Code
-$code-font-size:                    $small-font-size !default;
-$code-color:                        $primary !default;
-
-// Horizontal
-$hr-margin-y: $spacer !default;
-$hr-color: inherit !default;
-$hr-border-color: null !default; // Allows for inherited colors
-$hr-border-width: var(--border-width) !default;
-$hr-opacity: .25 !default;
-
-$legend-margin-bottom:        .5rem !default;
-$legend-font-size:            1.5rem !default;
-$legend-font-weight:          null !default;
-
-$dt-font-weight: $font-weight-bold !default;
-
-$mark-padding:                .1875em !default;
-$mark-color:                  $body-color !default;
-$mark-bg:                     $yellow-100 !default;
-
-$kbd-padding-y:                     .1875rem !default;
-$kbd-padding-x:                     .375rem !default;
-$kbd-font-size:                     $code-font-size !default;
-$kbd-color:                         var(--body-bg) !default;
-$kbd-bg:                            var(--body-color) !default;
-$nested-kbd-font-weight:            null !default; // Deprecated in v5.2.0, removing in v6
-
-$pre-color:                         null !default;
 
 // Options
 $enable-dark-mode: true !default;

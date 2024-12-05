@@ -8,13 +8,7 @@ $link-color-dark: $blue !default;
 $link-hover-color-dark: $primary !default;
 
 // Border
-$border-color: $white !default;
-$border-color-translucent: rgba($black, .175) !default;
+$border-color-dark: $white !default;
 
 // Heading
 $headings-color-dark: inherit !default;
-
-// Code
-$code-color-dark:                   $code-color !default;
-$mark-color-dark:                   $body-color-dark !default;
-$mark-bg-dark:                      $yellow !default;

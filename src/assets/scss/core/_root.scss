@@ -22,10 +22,6 @@
   --body-font-weight: #{$font-weight-base};
   --body-line-height: #{$line-height-base};
 
-  @if $body-text-align !=null {
-    --body-text-align: #{$body-text-align};
-  }
-
   --body-color: #{$body-color};
   --body-color-rgb: #{to-rgb($body-color)};
   --body-bg: #{$body-bg};
@@ -45,19 +41,9 @@
   --border-width: #{$border-width};
   --border-style: #{$border-style};
   --border-color: #{$border-color};
-  --border-color-translucent: #{$border-color-translucent};
-
-  // Focus styles
-  --focus-ring-width: #{$focus-ring-width};
-  --focus-ring-opacity: #{$focus-ring-opacity};
-  --focus-ring-color: #{$focus-ring-color};
 
   // Heading 
   --heading-color: #{$headings-color};
-
-  --code-color: #{$code-color};
-  --highlight-color: #{$mark-color};
-  --highlight-bg: #{$mark-bg};  
 }
 
 @if $enable-dark-mode {
@@ -75,12 +61,7 @@
     --link-hover-color-rgb: #{to-rgb($link-hover-color-dark)};
 
     --border-color: #{$border-color-dark};
-    --border-color-translucent: #{$border-color-translucent-dark};
 
     --heading-color: #{$headings-color-dark};
-
-    --code-color: #{$code-color-dark};
-    --highlight-color: #{$mark-color-dark};
-    --highlight-bg: #{$mark-bg-dark};
   }
 }

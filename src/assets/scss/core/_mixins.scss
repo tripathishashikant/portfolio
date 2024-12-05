@@ -1,5 +1,5 @@
 // Toggles
-//
+
 // Used in conjunction with global variables to enable certain theme features.
 
 // Helpers
@@ -10,12 +10,9 @@
 @import "mixins/visually-hidden";
 @import "mixins/reset-text";
 @import "mixins/text-truncate";
-
-// Utilities
-@import "mixins/utilities";
+@import "mixins/backdrop";
 
 // Components
-@import "mixins/backdrop";
 
 // Layout
 @import "mixins/clearfix";
